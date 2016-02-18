@@ -434,7 +434,7 @@ class Query implements IQuery
 		if (count($fromClause) > 3) { // complicated from clause
 			$subFluent = clone $fluent;
 			// Reset fluent.
-			foreach (array_keys(\DibiFluent::$separators) as $separator) {
+			foreach (array_keys(\Dibi\Fluent::$separators) as $separator) {
 				$fluent->removeClause($separator);
 			}
 			// If there are some joins, enwrap the original fluent to enable

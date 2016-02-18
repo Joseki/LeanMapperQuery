@@ -14,7 +14,8 @@
 		}
 	},
 	"require": {
-		"tharos/leanmapper": ">=2.1"
+		"dibi/dibi": "~3.0",
+		"tharos/leanmapper": "@dev"
 	},
 	"require-dev": {
 		"nette/tester": "~1.2"

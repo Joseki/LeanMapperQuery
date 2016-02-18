@@ -27,6 +27,10 @@ $connection = new Connection(array(
 $mapper = new TestMapper;
 $entityFactory = new DefaultEntityFactory;
 
+/**
+ * @param $table
+ * @return \LeanMapper\Fluent
+ */
 function getFluent($table)
 {
 	global $connection;
